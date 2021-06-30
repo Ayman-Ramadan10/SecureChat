@@ -1,4 +1,4 @@
-# SecureChat
+# SecureChat ![GitHub top language](https://img.shields.io/github/languages/top/w4po/SecureChat) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/w4po/SecureChat) ![GitHub Release Date](https://img.shields.io/github/release-date/w4po/SecureChat) ![GitHub all releases](https://img.shields.io/github/downloads/w4po/SecureChat/total?color=green) ![GitHub issues](https://img.shields.io/github/issues/w4po/SecureChat) ![GitHub](https://img.shields.io/github/license/w4po/SecureChat)
 SecureChat is an Android chat app that sends messages that are encrypted with PGP encryption.
 
 The app uses Firebase's realtime database as a server, and SQLite as a local database.
