@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="Theme.SecureChat" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="toolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/popupMenuListView</item>
+    </style>
+
+    <style name="popupMenuListView" parent="Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@color/colorDarkAccent</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="customTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorDarkAccent</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="alertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@android:color/holo_blue_dark</item>
+    </style>
+</resources>

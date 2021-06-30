@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/main_toolbar_layout">
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_above="@+id/chat_linear_layout"
+        android:layout_marginBottom="6dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtInputMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="type message here..."
+            android:textColorHint="@color/colorPrimaryDarkTransparent"
+            android:padding="15dp"
+            android:maxLines="5"
+            android:layout_toStartOf="@+id/btnSendMessage"/>
+
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
